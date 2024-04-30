@@ -1,0 +1,46 @@
+name: corenet_apple
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  # base
+  - python
+  - pip
+  # jupyter
+  - jupyterlab
+  - ipympl
+  - matplotlib
+  # ml
+  - pytorch
+  - torchvision
+  - torchaudio
+  - torchtext
+  - torchdata
+  - scikit-learn
+  - scikit-image
+  # data
+  - pyyaml
+  - pycocotools
+  - h5py
+  - pyarrow
+  - pandas
+  - boto3
+  # util
+  - ftfy
+  - tqdm
+  - black
+  - isort
+  # video
+  - ffmpeg-python
+  - fvcore
+  - av
+  # test
+  - pytest
+  - pytest-mock
+  - pytest-xdist
+  - pytest-timeout
+  # pip
+  - pip:
+    - coremltools
+    - pytorchvideo  # reproduce 3rd party models
+    - pybase64  # for reading byte data
